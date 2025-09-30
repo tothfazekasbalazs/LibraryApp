@@ -3,7 +3,7 @@ package edu.banki.libraryapp;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class NewBookController {
     @FXML
     private Label welcomeText;
 
