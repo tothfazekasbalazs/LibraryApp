@@ -5,4 +5,6 @@ module edu.banki.libraryapp {
 
     opens edu.banki.libraryapp to javafx.fxml;
     exports edu.banki.libraryapp;
+    exports edu.banki.libraryapp.controller;
+    opens edu.banki.libraryapp.controller to javafx.fxml;
 }

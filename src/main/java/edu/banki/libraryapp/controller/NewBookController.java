@@ -1,4 +1,4 @@
-package edu.banki.libraryapp;
+package edu.banki.libraryapp.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
