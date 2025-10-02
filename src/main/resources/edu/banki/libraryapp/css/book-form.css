@@ -1,0 +1,39 @@
+.root {
+    -fx-background-color: #e0f7fa;
+    -fx-border-color: #00838f;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2;
+}
+
+.label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #004d40;
+    fx-width: 250px;
+}
+
+.text-field, .combo-box, .date-picker {
+    -fx-border-color: #004d40;
+    -fx-background-color: #FFFFFF;
+    -fx-pref-width: 250px;
+}
+
+.button {
+    -fx-background-color: #00796b;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-transition: 0.3s;
+}
+
+.button:hover {
+    -fx-background-color: #004d40;
+}
+
+.button:focused {
+    -fx-background-color: #000000;
+}
+
+.text-field: focused, .combo-box:focused, .date-picker:focused {
+    -fx-background-color: #b2dfdb;
+}
