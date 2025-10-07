@@ -57,7 +57,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "DataManager: \n" +
+        return "Book: \n" +
                 " - author='" + getAuthor() +
                 " - title='" + getTitle() +
                 " - category='" + getCategory() +
