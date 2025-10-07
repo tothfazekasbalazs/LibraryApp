@@ -13,7 +13,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.Stack;
 
 public class NewBookController implements Initializable {
     @FXML
@@ -51,6 +50,6 @@ public class NewBookController implements Initializable {
     public void goToStock(ActionEvent event) throws IOException {
         Stage stage = (Stage) author.getScene().getWindow();
         Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/edu/banki/libraryapp/stock-view.fxml")));
-        stage.getScene(scene);
+        stage.setScene(scene);
     }
 }
