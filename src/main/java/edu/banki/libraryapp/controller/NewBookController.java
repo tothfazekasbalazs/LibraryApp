@@ -27,9 +27,15 @@ public class NewBookController implements Initializable {
 
     @FXML
     public void handleSave(ActionEvent event) {
-        Book book = new Book(author.getText(),title.getText(),categoryBox.getValue(),Integer.parseInt(year.getText()),datePicker.getValue());
-        DataManager.addBook(book);
-        showAlert("Sikeres mentés");
+        //Todo input validatoin
+        try {
+            Book book = new Book(author.getText(),title.getText(),categoryBox.getValue(),Integer.parseInt(year.getText()),datePicker.getValue());
+            DataManager.addBook(book);
+            showAlert("Sikeres mentés");
+        }catch (Exception e) {
+            showAlert("Hiba! Ellenőrizd az adatokat" + e.toString());
+        }
+
     }
 
     private void showAlert(String message) {
