@@ -17,6 +17,6 @@
              <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" text="Részletes kereső" />
          </children>
       </HBox>
-      <VBox layoutY="100.0" prefHeight="301.0" prefWidth="400.0" />
+      <VBox fx:id="dataContainer" layoutY="100.0" prefHeight="301.0" prefWidth="615.0" />
    </children>
 </AnchorPane>
