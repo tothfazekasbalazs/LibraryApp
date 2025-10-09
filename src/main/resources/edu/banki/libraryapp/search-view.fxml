@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="400.0" prefWidth="400.0" stylesheets="@./css/book-form.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.banki.libraryapp.SearchView">
+<AnchorPane prefHeight="405.0" prefWidth="524.0" stylesheets="@./css/book-form.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.banki.libraryapp.controller.SearchController">
    <children>
-      <HBox prefHeight="38.0" prefWidth="400.0">
+      <HBox prefHeight="38.0" prefWidth="615.0">
          <children>
-            <Label alignment="CENTER" prefHeight="38.0" prefWidth="173.0" text="Kereső szöveg: " />
-            <TextField prefHeight="38.0" prefWidth="103.0" />
-            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" text="Vissza" />
+            <Label alignment="CENTER" prefHeight="38.0" prefWidth="145.0" text="Kereső szöveg: " />
+            <TextField fx:id="searchField" prefHeight="38.0" prefWidth="202.0" />
+            <Button fx:id="seachButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" text="Vissza" />
              <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" text="Részletes kereső" />
          </children>
       </HBox>
