@@ -29,7 +29,7 @@ public class SearchController implements Initializable {
     @FXML
     TableView tableView;
 
-    ObservableList<Book> masterData = FXCollections.observableList();
+    ObservableList<Book> masterData = FXCollections.();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
