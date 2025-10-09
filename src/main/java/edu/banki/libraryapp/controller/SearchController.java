@@ -1,5 +1,9 @@
 package edu.banki.libraryapp.controller;
 
+import edu.banki.libraryapp.model.Book;
+import javafx.beans.Observable;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -25,8 +29,12 @@ public class SearchController implements Initializable {
     @FXML
     TableView tableView;
 
+    ObservableList<Book> masterData = FXCollections.observableList();
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        //TODO Create endpoint datamanager in Datamanager to get books and use it
+        masterData.addAll();
         initTable();
     }
 
