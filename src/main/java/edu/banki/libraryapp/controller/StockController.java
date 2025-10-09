@@ -30,4 +30,9 @@ public class StockController implements Initializable {
         stage.setScene(scene);
     }
 
+    public void goSearch(ActionEvent event) throws IOException {
+        Stage stage = (Stage) stockList.getScene().getWindow();
+        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/edu/banki/libraryapp/search-view.fxml")));
+        stage.setScene(scene);
+    }
 }
