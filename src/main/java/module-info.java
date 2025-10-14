@@ -7,4 +7,5 @@ module edu.banki.libraryapp {
     exports edu.banki.libraryapp;
     exports edu.banki.libraryapp.controller;
     opens edu.banki.libraryapp.controller to javafx.fxml;
+    opens edu.banki.libraryapp.model to javafx.base, javafx.fxml;
 }

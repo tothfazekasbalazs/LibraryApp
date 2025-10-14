@@ -13,6 +13,10 @@ public class DataManager {
         books.add(book);
     }
 
+    public static List<Book> getBooks() {
+        return books;
+    }
+
 //    public static Map<String, Long> getStock() {
 //        Map<String, Long> stock = new HashMap<>();
 //
