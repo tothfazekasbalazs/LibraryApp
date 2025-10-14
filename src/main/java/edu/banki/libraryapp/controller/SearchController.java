@@ -20,6 +20,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class SearchController implements Initializable {
@@ -40,14 +41,32 @@ public class SearchController implements Initializable {
 
     ObservableList<Book> masterData = FXCollections.observableArrayList();
 
+    ObservableList<Book> filteredData = FXCollections.observableArrayList();
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         masterData.addAll(DataManager.getBooks());
+        filteredData.addAll(masterData);
         initTable();
+        seachButton.setOnAction(this::onSearch);
+    }
+
+    private void onSearch(ActionEvent event) {
+        String searchText = searchField.getText().toLowerCase(Locale.ROOT).trim();
+        filteredData.clear();
+        if (searchText.isEmpty()) {
+            filteredData.addAll(masterData);
+        } else {
+            for (Book book : masterData) {
+                if (book.getAuthor().toLowerCase().contains(searchText)) {
+                    filteredData.add(book);
+                }
+            }
+        }
     }
 
     private void initTable() {
-        tableView = new TableView<>(masterData);
+        tableView = new TableView<>(filteredData);
         TableColumn author = new TableColumn<>("Szerző: ");
         author.setCellValueFactory(new PropertyValueFactory<>("author"));
         TableColumn title = new TableColumn<>("Cím: ");

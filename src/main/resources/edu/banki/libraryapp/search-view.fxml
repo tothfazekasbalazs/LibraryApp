@@ -13,8 +13,8 @@
          <children>
             <Label alignment="CENTER" prefHeight="38.0" prefWidth="145.0" text="Kereső szöveg: " />
             <TextField fx:id="searchField" prefHeight="38.0" prefWidth="202.0" />
+            <Button fx:id="seachButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" text="Részletes kereső" />
             <Button fx:id="goBacktoStock" onAction="#goBack" mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" text="Vissza" />
-             <Button fx:id="seachButton" mnemonicParsing="false" prefHeight="38.0" prefWidth="110.0" text="Részletes kereső" />
          </children>
       </HBox>
       <VBox fx:id="dataContainer" layoutY="100.0" prefHeight="301.0" prefWidth="615.0" />
